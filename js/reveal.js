@@ -1443,7 +1443,7 @@
 
 			var size = getComputedSlideSize();
 
-			var slidePadding = 20; // TODO Dig this out of DOM
+			var slidePadding = 0; // TODO Dig this out of DOM
 
 			// Layout the contents of the slides
 			layoutSlideContents( config.width, config.height, slidePadding );
