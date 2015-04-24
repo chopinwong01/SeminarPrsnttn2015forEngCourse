@@ -212,19 +212,24 @@
 					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/remotes/remotes.js', async: true }
+					{ src: 'plugin/tap/tap.js', async: true }
 
 				]
 			});
-			
-			window.addEventListener("mousedown", handleClick, false);
-			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
-
-			function handleClick(e) {
+			window.addEventListener("tap", onTap, false );
+			function onTap (e) {
 				e.preventDefault();
-				if(e.button === 0) Reveal.next(); 
-				if(e.button === 2) Reveal.prev(); 
+				reveal.next();    
 			}
+			
+			//window.addEventListener("mousedown", handleClick, false);
+			//window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			//function handleClick(e) {
+			//	e.preventDefault();
+			//	if(e.button === 0) Reveal.next(); 
+			//	if(e.button === 2) Reveal.prev(); 
+			//}
 
 		</script>
 
