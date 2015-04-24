@@ -216,21 +216,20 @@
 
 				]
 			});
+			
 			window.addEventListener('touchend', onTap, false);
 			function onTap (e) {
-				//e.preventDefault();
-				alert("I am an alert box!");
 				reveal.next();    
 			}
 			
-			//window.addEventListener("mousedown", handleClick, false);
-			//window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+			window.addEventListener("mousedown", handleClick, false);
+			window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
 
-			//function handleClick(e) {
-			//	e.preventDefault();
-			//	if(e.button === 0) Reveal.next(); 
-			//	if(e.button === 2) Reveal.prev(); 
-			//}
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next(); 
+				if(e.button === 2) Reveal.prev(); 
+			}
 
 		</script>
 
