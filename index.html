@@ -216,7 +216,10 @@
 
 				]
 			});
-			window.addEventListener("tap", onTap, false );
+
+			var el = document.getElementById('my-id'),
+    	myTap = new Tap(el);
+			el.addEventListener("tap", onTap, false );
 			function onTap (e) {
 				//e.preventDefault();
 				alert("I am an alert box!");
