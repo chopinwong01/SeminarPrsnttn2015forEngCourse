@@ -35,8 +35,8 @@
 
 			// The "normal" size of the presentation, aspect ratio will be preserved
 			// when the presentation is scaled to fit different resolutions
-			width: 800,
-			height: 600,
+			width: 1024,
+			height: 768,
 
 			// Factor of the display size that should remain empty around the content
 			margin: 0.1,
@@ -1443,7 +1443,7 @@
 
 			var size = getComputedSlideSize();
 
-			var slidePadding = 0; // TODO Dig this out of DOM
+			var slidePadding = 20; // TODO Dig this out of DOM
 
 			// Layout the contents of the slides
 			layoutSlideContents( config.width, config.height, slidePadding );
