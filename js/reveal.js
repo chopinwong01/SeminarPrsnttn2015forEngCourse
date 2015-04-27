@@ -3455,7 +3455,7 @@
 		}
 
 		var chash=window.location.hash;
-		if (chash=="#/5") {
+		if (chash=="#/6") {
 			window.location.assign("http://chopinwong01.github.io/SeminarPrsnttn2015forEngCourse/?transition=fade#/5");
 		};
 
@@ -3480,7 +3480,7 @@
 		}
 
 		var chash=window.location.hash;
-		if (chash=="#/6") {
+		if (chash=="#/7") {
 			window.location.assign("http://chopinwong01.github.io/SeminarPrsnttn2015forEngCourse/?transition=slide#/6");
 		};
 		// If auto-sliding is enabled we need to cue up
